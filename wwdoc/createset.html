@@ -1,0 +1,238 @@
+<!-- html page for displaying an itemized list for creating a WeBWorK assignment -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link href="../webwork.css" rel="stylesheet" type="text/css" />
+ <!-- modify webwork.css 
+ 	margin: 0 16.5em 1.5em 14em;
+ -->
+ <style type="text/css">
+ #mainContent {
+	margin : 0em 0em 0em 0em;
+	padding: 1em 2em;
+	background: #FFF url(../images/box_top.jpg) repeat-x;
+	border: 1px solid #e6e6ff;
+} 
+</style>
+
+<!-- css for this page only -->
+ <style type="text/css"> 
+ ul {
+	list-style-type: circle;
+	list-style-image: inherit;
+	list-style-position: inside;
+	}
+
+ ul ul {
+	list-style-type: circle;
+	list-style-image: inherit;
+	list-style-position: inside;
+	}
+	
+ ol {
+	list-style-type: decimal;
+	list-style-position: outside;
+	}
+
+ol ol {
+	list-style-type: lower-alpha;
+	}
+
+li  {
+	margin: 1em;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	}
+
+.button_choice,
+.check_box_choice,
+.drop_list_choice,
+.link_choice,
+.menu_choice,
+.page_title_ref,
+.radio_button_choice,
+.user_input{
+	background-color: rgb(231,231,255);
+/*	padding: 0.1em;    */
+	}
+
+.menu_choice {
+	color: rgb(0,0,255);
+/*	font-weight: bolder; */
+	font-size: 110%;
+	}
+	
+.radio_button_choice{
+/*	font-size: 110%; */
+	font-weight:bolder;
+	background-image:url(../images/radio_button.png);
+	background-repeat: no-repeat;
+	padding-left: 17px;
+	}
+
+.user_input{
+	font-family: monospace;
+	font-size: 150%;
+	}
+
+.link_choice{
+	font-size:110%;
+	text-decoration:underline;
+	color: rgb(0,0,255);
+	}
+	
+.check_box_choice{
+	font-weight:bolder;
+	background-image:url(../images/selection_box_checked.png);
+	background-repeat: no-repeat;
+	padding-left: 17px;
+	}
+	
+.drop_list_choice,
+.button_choice,
+.page_title_ref{
+font-weight:bold;
+}
+
+.emphasis{
+	font-style: italic;
+	background-color: rgb(239,239,255);
+	}
+	
+</style>
+<title>Create WeBWorK Homework Sets</title>
+<head>
+<body>
+<div id="container">
+<div id="header">
+</div>
+<div id="mainContent">
+<!-- <li> -->
+<h3>Create a new homework set</h3>
+Select <span class="menu_choice">Hmwk Sets Editor</span> (under Instructor Tools in the Main Menu on the left)
+
+<!-- </li> -->
+<ol>
+<li>
+In the top list of choices select the radio button <span class="radio_button_choice">Create a new set named:</span>
+</li>
+<li>
+Give your new set a name of the shape <span class="user_input">yourname-set-1</span>.
+</li>
+<li>
+Leave the default <span class="drop_list_choice">as a new empty set</span> selected and
+press the <span class="button_choice">Take Action!</span> button.
+WeBWorK reports the success (or failure) of the action at the top of the page (just under the header Hmwk Sets Editor).
+</li>
+<li> Your new set will show up in the list of homework sets at the bottom of the page.  It has zero questions and is assigned to zero users.
+</li>
+</ol>
+
+<h3>Add problems to your set</h3>
+Select <span class="menu_choice">Library Browser</span> (from the Main Menu on the left).
+<ol>
+<li>
+In the Library Browser choose your set from the drop down box <span class="drop_list_choice">Add problems to Target Set:</span>
+</li>
+<li>
+Under the section of the screen where you just selected your set is the section where you choose which library to work in.
+You have various options - the default option, the <span class="button_choice">National Problem Library</span>, is the question library we will use today.
+<!--
+You have various options - for today make sure the <span class="button_choice">National Problem Library</span> button is the one pressed.
+-->
+</li>
+<li>
+Choose a <span class="drop_list_choice">Subject</span>, <span class="drop_list_choice">Chapter</span>, and <span class="drop_list_choice">Section</span> of the National Problem Library to search for questions.
+</li>
+<li>
+Choose your prefered display mode.  Any one should work for today.  <span class="emphasis">jsMath</span> and <span class="emphasis">LaTeXMathML</span> are prefered, but both can have problems on slow computers or older browsers.
+</li>
+<li>
+Now press the <span class="button_choice">View Problems</span> button.
+You should see a list of problems, each in a box.
+
+Generally you will proceed by marking problems to add to the set then updating the set to add the problems that you have marked to the set.
+</li>
+<ul>
+<li>
+Above the list of problems are a number of buttons:  <span class="button_choice">Mark All For Adding</span>, <span class="button_choice">Clear All Marks</span>, and <span class="button_choice">Update Set</span> do what they say they do.  <span class="button_choice">Rerandomize</span> will show you the same problems with a different random seed.  <span class="button_choice">Clear Problem Display</span> will not undo any changes that you have made to the set with <span class="button_choice">Update Set</span>, but otherwise will reset the display back to before you pressed <span class="button_choice">View Problems</span>.
+</li>
+<li>
+At the top of each problem box is the file name of the problem.  This is followed by two check boxes.  The first, <span class="check_box_choice">Don't show this problem on the next update</span>, you can select if you have definitely decided that you won't use this problem in this homework set.  Select the second box, <span class="check_box_choice">Add this problem to the target set on the next update</span>, to add the problem to your set.  Neither box has any effect until you press the <span class="button_choice">Update Set</span> button.
+At the right of each problem box are two links <span class="link_choice">Edit it</span> and <span class="link_choice">Try it</span>.  <span class="link_choice">Edit it</span> allows you to edit a local copy of the source code for the problem.  Editing the source code is not a topic for today's seminar (it can be complicated to randomize the problems properly), but you may want to take a peek at one to see what the source code looks like.
+The <span class="link_choice">Try it</span> link allows you try the problem from a student's point of view.
+</li>
+</ul>
+<li>
+Select problems with the <span class="check_box_choice">Add this problem to the target set on the next update</span> box and add them to your set by pressing the <span class="button_choice">Update Set</span> button.
+</li>
+</ol>
+<!--
+Once you are satisfied with the problems in the set there are a few things to do yet.
+-->
+<h3>Homework set detail</h3>
+Once you are satisfied with the problems in the set go back to the <span class="menu_choice">Hmwk Sets Editor</span>.
+<ol>
+<li>
+You should see your set listed at the bottom of the page.  From here you can <span class="emphasis">Edit Set Data</span> (by clicking the pencil), you can <span class="emphasis">edit the set detail</span> (by clicking the number of problems under Edit Problems), or <span class="emphasis">assign the set to students</span> (by clicking the 0/15 under Edit Assigned Users).
+</li>
+<li>
+Click the number under Edit Problems to go to the <span class="page_title_ref">Set Detail</span> page for your homework set.
+Under <span class="emphasis">General Information</span> set an opening date, due date, and answer display date for your assignment.  The date format is MM/DD/YYYY.  We don't know (yet) how to change this.
+</li>
+<li>
+The defaults <span class="emphasis">Visible to Students: Yes</span> and <span class="emphasis">Assignment type - homework</span> are fine for us.
+Each homework set has two headers associated with it.  One is displayed as part of the web page when the student views at the homework set on our WeBWorK site.  The second is displayed at the top of the pdf page when the student prepares to print a hardcopy of the assignment.  For now use the default headers.
+</li>
+<li>
+The rest of the page allows you to fine tune the assignment by reordering problems or changing their weighting.  You can also restrict the number of attempts allowed for a problem.  <span class="emphasis">Unlimited</span> attempts is the default and this is what we recommend.
+</li>
+<li>
+Choose <span class="button_choice">Save Changes</span> before you leave this page, else all your work here will be lost.
+Your set is ready to go.  It only remains to assign the set to some students.
+</li>
+</ol>
+<h3>Assign homework set to users</h3>
+Go back to the <span class="menu_choice">Hmwk Sets Editor</span>.
+<ol>
+<li>
+For your set, under <span class="emphasis">Edit Assigned Users</span> you should see <span class="link_choice">0/15</span> indicating that your set is assigned to none of the 15 students and professors in this course.  Click on <span class="link_choice">0/15</span> to remedy this.
+</li>
+<li>
+On the <span class="page_title_ref">Users Assigned to Set ...</span> screen you can either:
+<ul>
+<li>
+Click the button <span class="button_choice">Assign to All Current Users</span>, assigning the set to all users in the course or,
+</li>
+<li>
+Assign the set to a subset of course users by checking the relevant boxes and pressing the <span class="button_choice">Save</span> button.
+</li>
+</ul>
+</ol>
+<h3>Proofread the homework set</h3>
+Before quitting, proofread your assignment.  
+<ol>
+<li>
+Once you have assigned your set to yourself, you should see it listed in the <span class="menu_choice">Main Menu</span> under <span class="menu_choice">Homework Sets</span>.  Clicking this link will take you to a display similar to what the students see.
+</li>
+<li>
+Read the contents of the <span class="emphasis">Set Info</span> box on the right of the page ensuring that it says what you want to say.
+</li>
+<li>
+Step through the problems as another check.  You will see the problem source file name listed for your benefit.  The students do not see this.
+</li>
+<li>
+Go back up to the problem list and click <span class="link_choice">Download a hardcopy of this homework set</span>.
+Leave all of the options here alone, scroll to the bottom of the page and press the <span class="button_choice">Generate hardcopy for selected sets and selected users</span> button.  Proofread this pdf file as well (it uses a second header file).
+</li>
+</ol>
+</div>
+</div>
+</body>
+</html>
