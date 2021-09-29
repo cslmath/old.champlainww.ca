@@ -1,0 +1,802 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2018.08.17.18.05.48;	author root;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2018.08.17.18.01.04;	author root;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2013.08.28.16.03.37;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2013.08.28.15.51.11;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@Tips for students, mostly written by Michele
+@
+
+
+1.4
+log
+@Fix courses link glitch.
+@
+text
+@<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- <base href="http://champlainww.ca/"> -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Champlain College WeBWorK : Tips for Students</title>
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut" href="../favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link href="../css/webwork-tips.css" rel="stylesheet" type="text/css" />
+ <!-- modify webwork.css 
+ 	margin: 0 16.5em 1.5em 14em;
+ -->
+
+<!-- css for this page only -->
+ <style type="text/css"> 
+ ul {
+	list-style-type: circle;
+	list-style-image: inherit;
+	list-style-position: inside;
+	}
+
+ ul ul {
+	list-style-type: circle;
+	list-style-image: inherit;
+	list-style-position: inside;
+	}
+	
+ ol {
+	list-style-type: decimal;
+	list-style-position: outside;
+	}
+
+ol ol {
+	list-style-type: lower-alpha;
+	}
+
+li  {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	margin-left: 0em;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	}
+
+.button_choice,
+.check_box_choice,
+.drop_list_choice,
+.link_choice,
+.menu_choice,
+.page_title_ref,
+.radio_button_choice,
+.user_input{
+	background-color: rgb(231,231,255);
+/*	padding: 0.1em;    */
+	}
+
+.menu_choice {
+	color: rgb(0,0,255);
+/*	font-weight: bolder; */
+	font-size: 110%;
+	}
+	
+.radio_button_choice{
+/*	font-size: 110%; */
+	font-weight:bolder;
+	background-image:url(../images/radio_button.png);
+	background-repeat: no-repeat;
+	padding-left: 17px;
+	}
+
+.user_input{
+	font-family: monospace;
+	font-size: 150%;
+	}
+
+.link_choice{
+	font-size:110%;
+	text-decoration:underline;
+	color: rgb(0,0,255);
+	}
+	
+.check_box_choice{
+	font-weight:bolder;
+	background-image:url(../images/selection_box_checked.png);
+	background-repeat: no-repeat;
+	padding-left: 17px;
+	}
+	
+.drop_list_choice,
+.button_choice,
+.page_title_ref{
+font-weight:bold;
+}
+
+.emphasis{
+	font-style: italic;
+	background-color: rgb(239,239,255);
+	}
+	
+</style>
+
+</head>
+<body>
+<div id="container">
+<div id="header">
+
+    <a href="http://www.champlainonline.com/" target="_blank"><img class="logo" src="../images/spacer.gif" /></a>
+   </div>
+   <div id="nav">
+	<ul>
+	<li><a href="http://webwork.champlainww.ca/webwork2/">Courses</a></li>
+    <li><a href="#">Tips for Students</a></li>
+    <li><a href="http://webwork.maa.org/wiki/Student_Information">Mathematical Association of America</a></li>
+	</ul>
+   </div>
+    <div id="nav-title">
+	<a href="../index.html">Department of Mathematics WeBWorK</a>
+   </div>
+  <!-- end #header -->
+  
+    <div id="container-content">
+    
+</div>
+<div id="mainContent">
+
+<a name="top">
+<h1 class="tips"></h1>
+</a>
+
+<h2>Using WebWorK</h2>
+
+<ol>
+<li> <a href="#u1">How do I log in to WeBWorK?</a>
+<li> <a href="#u2">I changed my password and forgot it.  What should I do?</a>
+
+</ol>
+
+<h2>Doing WeBWorK assignments</h2>
+
+<ol>
+
+<li> <a href="#d1">How do I print all the questions in my assignment?</a>
+<li> <a href="#d2">How do I see the correct answer?</a>
+<li> <a href="#d3">I'm sure my answer is correct, but it is scored as a wrong answer.  What can I do?</a>
+<li> <a href="#d4">What happens if I answer a question right the first time, and try it again later and get it wrong?</a>
+<li> <a href="#d5">Can I get an extension on the due date?</a>
+<li> <a href="#d6">How do I see my progress on homework for the course?</a>
+<li> <a href="#d7">How can I look at closed homework sets?  They seem to have disappeared from the list.</a>
+<li> <a href="#d8">In my printed assignment, I see a &quot;?&quot; (boxed) in the middle of a question. Is that a misprint?</a>
+<li> <a href="#d9">I clicked on a homework set but I don't see any of the problems. What can I do?</a>
+</ol>
+
+<h2>Entering answers in WeBWorK</h2>
+
+<ol>
+<li> <a href="#a1">How do I enter square roots or cube roots?</a>
+<li> <a href="#a2">How do I enter the number &pi; in my answer?</a>
+<li> <a href="#a3">WeBWorK says my answer is incorrect but I can't see what is wrong. What can I try?</a>
+<li> <a href="#a4">How many decimal places do I need to have my answer scored correctly?</a>
+<li> <a href="#a5">The answer box is too small.  How do I enter my answer?</a>
+<li> <a href="#a6">What do I use to enter intervals in WeBWorK?</a>
+<li> <a href="#a7">Do I use a comma or a dot for the decimal point?</a>
+</ol>
+
+<p>
+<hr>
+
+<p>
+<h3>Using WebWorK</h3>
+<ol>
+<li> <a name="u1"><strong>How do I log on?</strong></a>
+<br>
+To log into WebWorK, point your Web browser to the address <a href="http://www.champlainww.ca/">http://www.champlainww.ca/</a>, then click on Courses, and finally choose your course from the list.<br>
+<ul>
+<li> Your <b>Username</b> is your seven-digit student number. 
+<li> Your initial <b>Password</b> is your seven-digit student number. 
+</ul>
+As soon as you log in for the first time you should use the Password/Email link to:
+<ul>
+<li> Change your password
+ <li> Enter your email 
+</ul>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="u2"><strong>I changed my password and forgot it.  What should I do?</strong></a>
+<br>
+Your teacher can reset your password to its initial password.  
+<br>
+<a href="#top">Return to the top</a>
+</ol>
+
+<h3>Doing WeBWorK assignments</h3>
+<ol>
+
+<li> <a name="d1"><strong>How do I print all the questions in my assignment?</strong></a>
+<br>
+In WeBWorK, the phrase &quot;Download a hardcopy&quot; means print the assignment as a Portable Document Format 
+(PDF) file. There are two places in WeBWorK where you can print an assignment:
+<ul>
+<li> From the list of Homework Sets, click in the box to put a check mark beside the assignment you want and then click on
+&quot;Download PDF or TeX Hardcopy for Selected Sets&quot; (near the bottom).
+<li> Or, from within the assignment, where you can see the list of problems, click on &quot;Download PDF or TeX Hardcopy for Current Set&quot;.
+</ul>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d2"><strong>How do I see the correct answer?</strong></a>
+<br>
+After the answer date, you may view the answer to a problem by checking the "Show Correct Answer" box and then checking your answer, or by printing 
+your assignment (downloading a hard copy) with answers.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+<li> <a name="d3"><strong>I'm sure my answer is correct, but it is scored as a wrong answer.  What can I do?</strong></a>
+<br>
+Talk to your teacher.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d4"><strong>What happens if I answer a question right the first time, and try it again later and get it wrong?</strong></a>
+<br>
+If you do a problem correctly once, its status will always be Correct even if you later do the problem again incorrectly.  It the problem allows partial credit, the highest percentage correct you receive on any attempt is recorded, regardless of which parts are correct or not.  So, to get 100% correct on a partial credit problem, you need all parts correct on the same attempt.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+<li> <a name="d5"><strong>Can I get an extension on the due date?</strong></a>
+<br>
+The policy on extending due dates for homework is determined by your teacher.  WeBWorK supports individual due dates for students.
+<br>
+
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d6"><strong>How do I see my progress on homework for the course?</strong></a>
+<br>
+Click Grades under the Homework Sets heading in the left column.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d7"><strong>Can I look at closed homework sets?  
+</strong></a>
+
+<br>
+Yes.  You may work on the problems and have your answers checked, but your score will not be recorded.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d8"><strong>In my printed assignment, I see a &quot;?&quot; (boxed) in the middle of a question. 
+Is that a misprint?
+</strong></a>
+
+<br>
+The &quot;?&quot; (boxed) appears in the pdf printout whenever there is a drop-down box menu 
+in that question. In that case, you will need to login to WeBWorK to view that question <em>online</em> to see the drop-down 
+choices available for the answer.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+<li> <a name="d9"><strong>I clicked on a homework set but I don't see any of the problems. What can I do?
+</strong></a>
+
+<br>You may need to scroll down the page to see the problems.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+</ol>
+
+<hr>
+
+<h3>Entering answers in WeBWorK</h3>
+<ol>
+<li> <a name="a1"><strong>How do I enter square roots or cube roots?</strong></a>
+<br>
+For square roots, you can use <b>sqrt()</b> or the exponent (1/2). For example, the square root of two in WeBWorK
+is either sqrt(2) or 2^(1/2). For cube roots, use the exponent (1/3). The cube root of 7 is then 7^(1/3). 
+<br>
+<a href="#top">Return to the top</a>
+<p>
+<li> <a name="a2"><strong>How do I enter the number &pi; in my answer?</strong></a>
+
+<br>
+Enter pi for the number &pi; in WeBWorK.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+<li> <a name="a3"><strong>WeBWorK says my answer is incorrect but I can't see what is wrong. What can I try?</strong></a>
+<br>
+<ul>
+<li> Use the Preview button to see what WeBWorK understands that you have entered. 
+<li> See if there are any ways to simplify your answer. For example, simplify e^0 to 1, simplify 1^(5/2) to 1, 
+simplify sin(&pi;) to 0, simplify cos(&pi;) to -1, etc...
+<li> Do you expect your answer to be positive or negative? Use Preview.
+<li> Check for brackets, especially with negative numbers. For example, (-3)^2 is not the same as -3^2. 
+<li> Check how you enter exponents. For example, e^3^x is not the same as e^(3x).
+<li> Check that you are using the correct brackets for intervals (see below).
+<li> Check that you use a dot for a decimal point and not a comma.
+</ul>
+<a href="#top">Return to the top</a>
+<p>
+
+<li><a name="a4"><strong>How many decimal places do I need to have my answer scored correctly?</strong></a>
+<br>
+For most numerical problems, WeBWorK counts an answer within .01 percent of the right answer as correct. 
+So, if the right answer is 12345, anything between 12343.765 and 12346.235 counts as correct.    
+If the correct answer is smaller, &pi; /2 for example, an answer would need to be within about 0.0001570796 
+of &pi; /2 to be considered correct.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="a5"><strong>The answer box is too small.  How do I enter my answer?</strong></a>
+<br>
+WeBWorK will accept hundreds of characters in an answer box, even if the box size on the screen is smaller.  
+When you enter a long answer in a short answer box, the text scrolls to the left as you continue to type 
+characters.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="a6"><strong>What do I use to enter intervals in WeBWorK?</strong></a>
+<br>
+Use a round bracket, that is, &quot;(&quot; or &quot;)&quot;, if the endpoint of the interval is not included. Use a square bracket, that is, &quot;[&quot; or &quot;]&quot;, if the endpoint of the interval is included.<br>
+For example, enter (-4,3) to indicate the interval -4&lt;x&lt;3. Note: WeBWorK will not accept ]-4,3[ as a correct answer for that same interval. 
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+<li> <a name="a7"><strong>Do I use a comma or a dot for the decimal point?</strong></a>
+<br>
+Use a dot for the decimal point. For example, a number such as 0.625 (that is, do not write it as 0,625). 
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+</ol>
+
+
+<hr>
+
+<em>
+This page reviewed August 17, 2018.
+</em>
+</div>
+</div>
+
+<!-- start #footer -->
+<div id="footer">
+<p>&copy; 2009-2018 Champlain College Saint-Lambert. All Rights Reserved.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
+@
+
+
+1.3
+log
+@Updated design from 2014 finally implemented.
+@
+text
+@d117 1
+a117 1
+	<li><a href="http://webwork.champlainww.ca/test/webwork2/">Courses</a></li>
+@
+
+
+1.2
+log
+@Added Michele's additions.
+@
+text
+@d1 371
+a371 354
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link href="../webwork.css" rel="stylesheet" type="text/css" />
+ <!-- modify webwork.css 
+ 	margin: 0 16.5em 1.5em 14em;
+ -->
+ <style type="text/css">
+ #mainContent {
+	margin : 0em 0em 0em 0em;
+	padding: 1em 2em;
+	background: #FFF url(../images/box_top.jpg) repeat-x;
+	border: 1px solid #e6e6ff;
+} 
+</style>
+
+<!-- css for this page only -->
+ <style type="text/css"> 
+/* Modify font - originally Verdana, but the pi in Verdana is too much like n
+	- MH 2009-11-16   */
+body  {
+        font: 100%  Arial, Helvetica, sans-serif;
+        }
+ ul {
+	list-style-type: circle;
+	list-style-image: inherit;
+	list-style-position: inside;
+	}
+
+ ul ul {
+	list-style-type: circle;
+	list-style-image: inherit;
+	list-style-position: inside;
+	}
+	
+ ol {
+	list-style-type: decimal;
+	list-style-position: outside;
+	}
+
+ol ol {
+	list-style-type: lower-alpha;
+	}
+
+li  {
+	margin: 1em;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	}
+
+.button_choice,
+.check_box_choice,
+.drop_list_choice,
+.link_choice,
+.menu_choice,
+.page_title_ref,
+.radio_button_choice,
+.user_input{
+	background-color: rgb(231,231,255);
+/*	padding: 0.1em;    */
+	}
+
+.menu_choice {
+	color: rgb(0,0,255);
+/*	font-weight: bolder; */
+	font-size: 110%;
+	}
+	
+.radio_button_choice{
+/*	font-size: 110%; */
+	font-weight:bolder;
+	background-image:url(../images/radio_button.png);
+	background-repeat: no-repeat;
+	padding-left: 17px;
+	}
+
+.user_input{
+	font-family: monospace;
+	font-size: 150%;
+	}
+
+.link_choice{
+	font-size:110%;
+	text-decoration:underline;
+	color: rgb(0,0,255);
+	}
+	
+.check_box_choice{
+	font-weight:bolder;
+	background-image:url(../images/selection_box_checked.png);
+	background-repeat: no-repeat;
+	padding-left: 17px;
+	}
+	
+.drop_list_choice,
+.button_choice,
+.page_title_ref{
+font-weight:bold;
+}
+
+.emphasis{
+	font-style: italic;
+	background-color: rgb(239,239,255);
+	}
+	
+</style>
+<head>
+    <title>Champlain College WeBWorK : Tips for Students</title>
+</head>
+<body>
+<div id="container">
+<div id="header">
+</div>
+<div id="mainContent">
+<a name="top">
+<h1>WeBWorK at Champlain College Saint-Lambert: Tips For Students</h1>
+</a>
+
+<h2>Using WebWorK</h2>
+
+<ol>
+<li> <a href="#u1">How do I log in to WeBWorK?</a>
+<li> <a href="#u2">I changed my password and forgot it.  What should I do?</a>
+
+</ol>
+
+<h2>Doing WeBWorK assignments</h2>
+
+<ol>
+
+<li> <a href="#d1">How do I print all the questions in my assignment?</a>
+<li> <a href="#d2">How do I see the correct answer?</a>
+<li> <a href="#d3">I'm sure my answer is correct, but it is scored as a wrong answer.  What can I do?</a>
+<li> <a href="#d4">What happens if I answer a question right the first time, and try it again later and get it wrong?</a>
+<li> <a href="#d5">Can I get an extension on the due date?</a>
+<li> <a href="#d6">How do I see my progress on homework for the course?</a>
+<li> <a href="#d7">How can I look at closed homework sets?  They seem to have disappeared from the list.</a>
+<li> <a href="#d8">In my printed assignment, I see a &quot;?&quot; (boxed) in the middle of a question. Is that a misprint?</a>
+<li> <a href="#d9">I clicked on a homework set but I don't see any of the problems. What can I do?</a>
+</ol>
+
+<h2>Entering answers in WeBWorK</h2>
+
+<ol>
+<li> <a href="#a1">How do I enter square roots or cube roots?</a>
+<li> <a href="#a2">How do I enter the number &pi; in my answer?</a>
+<li> <a href="#a3">WeBWorK says my answer is incorrect but I can't see what is wrong. What can I try?</a>
+<li> <a href="#a4">How many decimal places do I need to have my answer scored correctly?</a>
+<li> <a href="#a5">The answer box is too small.  How do I enter my answer?</a>
+<li> <a href="#a6">What do I use to enter intervals in WeBWorK?</a>
+<li> <a href="#a7">Do I use a comma or a dot for the decimal point?</a>
+</ol>
+
+<p>
+<hr>
+
+<p>
+<h3>Using WebWorK</h3>
+<ol>
+<li> <a name="u1"><strong>How do I log on?</strong></a>
+<br>
+To log into WebWorK, point your Web browser to the address <a href="http://www.champlainww.ca/">http://www.champlainww.ca/</a>, then click on Courses, and finally choose your course from the list.<br>
+<ul>
+<li> Your <b>Username</b> is your seven-digit student number. 
+<li> Your initial <b>Password</b> is your seven-digit student number. 
+</ul>
+As soon as you log in for the first time you should use the Password/Email link to:
+<ul>
+<li> Change your password
+ <li> Enter your email 
+</ul>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="u2"><strong>I changed my password and forgot it.  What should I do?</strong></a>
+<br>
+Your teacher can reset your password to its initial password.  
+<br>
+<a href="#top">Return to the top</a>
+</ol>
+
+<h3>Doing WeBWorK assignments</h3>
+<ol>
+
+<li> <a name="d1"><strong>How do I print all the questions in my assignment?</strong></a>
+<br>
+In WeBWorK, the phrase &quot;Download a hardcopy&quot; means print the assignment as a Portable Document Format 
+(PDF) file. There are two places in WeBWorK where you can print an assignment:
+<ul>
+<li> From the list of Homework Sets, click in the box to put a check mark beside the assignment you want and then click on
+&quot;Download PDF or TeX Hardcopy for Selected Sets&quot; (near the bottom).
+<li> Or, from within the assignment, where you can see the list of problems, click on &quot;Download PDF or TeX Hardcopy for Current Set&quot;.
+</ul>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d2"><strong>How do I see the correct answer?</strong></a>
+<br>
+After the answer date, you may view the answer to a problem by checking the "Show Correct Answer" box and then checking your answer, or by printing 
+your assignment (downloading a hard copy) with answers.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+<li> <a name="d3"><strong>I'm sure my answer is correct, but it is scored as a wrong answer.  What can I do?</strong></a>
+<br>
+Talk to your teacher.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d4"><strong>What happens if I answer a question right the first time, and try it again later and get it wrong?</strong></a>
+<br>
+If you do a problem correctly once, its status will always be Correct even if you later do the problem again incorrectly.  It the problem allows partial credit, the highest percentage correct you receive on any attempt is recorded, regardless of which parts are correct or not.  So, to get 100% correct on a partial credit problem, you need all parts correct on the same attempt.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+<li> <a name="d5"><strong>Can I get an extension on the due date?</strong></a>
+<br>
+The policy on extending due dates for homework is determined by your teacher.  WeBWorK supports individual due dates for students.
+<br>
+
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d6"><strong>How do I see my progress on homework for the course?</strong></a>
+<br>
+Click Grades under the Homework Sets heading in the left column.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d7"><strong>Can I look at closed homework sets?  
+</strong></a>
+
+<br>
+Yes.  You may work on the problems and have your answers checked, but your score will not be recorded.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="d8"><strong>In my printed assignment, I see a &quot;?&quot; (boxed) in the middle of a question. 
+Is that a misprint?
+</strong></a>
+
+<br>
+The &quot;?&quot; (boxed) appears in the pdf printout whenever there is a drop-down box menu 
+in that question. In that case, you will need to login to WeBWorK to view that question <em>online</em> to see the drop-down 
+choices available for the answer.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+<li> <a name="d9"><strong>I clicked on a homework set but I don't see any of the problems. What can I do?
+</strong></a>
+
+<br>You may need to scroll down the page to see the problems.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+</ol>
+
+<hr>
+
+<h3>Entering answers in WeBWorK</h3>
+<ol>
+<li> <a name="a1"><strong>How do I enter square roots or cube roots?</strong></a>
+<br>
+For square roots, you can use <b>sqrt()</b> or the exponent (1/2). For example, the square root of two in WeBWorK
+is either sqrt(2) or 2^(1/2). For cube roots, use the exponent (1/3). The cube root of 7 is then 7^(1/3). 
+<br>
+<a href="#top">Return to the top</a>
+<p>
+<li> <a name="a2"><strong>How do I enter the number &pi; in my answer?</strong></a>
+
+<br>
+Enter pi for the number &pi; in WeBWorK.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+<li> <a name="a3"><strong>WeBWorK says my answer is incorrect but I can't see what is wrong. What can I try?</strong></a>
+<br>
+<ul>
+<li> Use the Preview button to see what WeBWorK understands that you have entered. 
+<li> See if there are any ways to simplify your answer. For example, simplify e^0 to 1, simplify 1^(5/2) to 1, 
+simplify sin(&pi;) to 0, simplify cos(&pi;) to -1, etc...
+<li> Do you expect your answer to be positive or negative? Use Preview.
+<li> Check for brackets, especially with negative numbers. For example, (-3)^2 is not the same as -3^2. 
+<li> Check how you enter exponents. For example, e^3^x is not the same as e^(3x).
+<li> Check that you are using the correct brackets for intervals (see below).
+<li> Check that you use a dot for a decimal point and not a comma.
+</ul>
+<a href="#top">Return to the top</a>
+<p>
+
+<li><a name="a4"><strong>How many decimal places do I need to have my answer scored correctly?</strong></a>
+<br>
+For most numerical problems, WeBWorK counts an answer within .01 percent of the right answer as correct. 
+So, if the right answer is 12345, anything between 12343.765 and 12346.235 counts as correct.    
+If the correct answer is smaller, &pi; /2 for example, an answer would need to be within about 0.0001570796 
+of &pi; /2 to be considered correct.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="a5"><strong>The answer box is too small.  How do I enter my answer?</strong></a>
+<br>
+WeBWorK will accept hundreds of characters in an answer box, even if the box size on the screen is smaller.  
+When you enter a long answer in a short answer box, the text scrolls to the left as you continue to type 
+characters.
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+<li> <a name="a6"><strong>What do I use to enter intervals in WeBWorK?</strong></a>
+<br>
+Use a round bracket, that is, &quot;(&quot; or &quot;)&quot;, if the endpoint of the interval is not included. Use a square bracket, that is, &quot;[&quot; or &quot;]&quot;, if the endpoint of the interval is included.<br>
+For example, enter (-4,3) to indicate the interval -4&lt;x&lt;3. Note: WeBWorK will not accept ]-4,3[ as a correct answer for that same interval. 
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+
+<li> <a name="a7"><strong>Do I use a comma or a dot for the decimal point?</strong></a>
+<br>
+Use a dot for the decimal point. For example, a number such as 0.625 (that is, do not write it as 0,625). 
+<br>
+<a href="#top">Return to the top</a>
+<p>
+
+</ol>
+
+
+<hr>
+
+<em>
+This page updated August 27, 2013.
+</em>
+</div>
+</div>
+</body>
+</html>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d145 1
+d156 2
+d264 9
+d302 2
+d327 16
+d344 2
+d349 1
+a349 1
+This page updated September 10, 2012.
+@
