@@ -1,0 +1,41 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2020.02.10.23.26.50;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2020.02.10.23.21.30;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@robots.txt for instructions for web spiders
+@
+
+
+1.2
+log
+@Exclude from wwtmp and RCS
+@
+text
+@User-agent: *
+Disallow: /wwtmp/
+Disallow: /RCS/
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 3
+@

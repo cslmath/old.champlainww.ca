@@ -1,0 +1,148 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2018.08.17.18.02.12;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2018.08.17.17.25.29;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@News file separated out from index.html
+@
+
+
+1.2
+log
+@updated structure from 2014 finally implemented.
+.\
+@
+text
+@<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- <base href="champlainww.ca/"> -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="google-site-verification" content="KSVYNUFk6iYOZP1kd53EHjG1TGRdg5MIg5uv0DZ2IPo" />
+<title>Champlain College WeBWorK</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="css/webwork-news.css" rel="stylesheet" type="text/css" />
+
+
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+#mainContent, #sidebar1 li a { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+  <div id="header">
+    <a href="http://www.champlainonline.com/" target="_blank"><img class="logo" src="images/spacer.gif" /></a>
+   </div>
+   <div id="nav">
+	<ul>
+	<li><a href="https://webwork.champlainww.ca/webwork2/">Courses</a></li>
+    <li><a href="wwdoc/WWstudenttips.html">Tips for Students</a></li>
+    <li><a href="http://webwork.maa.org/wiki/Student_Information">Mathematical Association of America</a></li>
+	</ul>
+   </div>
+    <div id="nav-title">
+	<a href="index.html">Department of Mathematics WeBWorK</a>
+   </div>
+  <!-- end #header -->
+  
+  <!-- start #news (NEWEST news first) -->
+  
+    <div id="container-content">
+
+<div id="sidebar2">
+    <img class="icon-news" src="images/spacer.gif" />
+  <!------------------------ *EDIT NEWS HERE* START NEWS ------------------------------->
+           <p class="date">August 16, 2018</p>
+         <p class="info">The Champlain WeBWorK system is installed on a shiny new server.  The WeBWorK version is now 2.13.
+               More details can be found in the <a href="http://webwork.maa.org/wiki/Release_notes_for_WeBWorK_2.13">release notes</a>.</p>
+  <!------------------------ *EDIT NEWS HERE* END NEWS ------------------------------->
+
+  <!------------------------ *EDIT NEWS HERE* START NEWS ------------------------------->
+    <p class="date">August 28, 2013</p>
+         <p class="info">The Champlain WeBWorK system is updated to version 2.7.  There is a new look and a number of new features. More details can be found in the <a href="http://webwork.maa.org/wiki/Release_notes_for_WeBWorK_2.7">release notes</a>.</p>
+  <!------------------------ *EDIT NEWS HERE* END NEWS ------------------------------->
+  
+  <!------------------------ *EDIT NEWS HERE* START NEWS ------------------------------->
+    <p class="date">August 24, 2011</p>
+         <p class="info">The Fall semester starts with WeBWorK updated to version 2.4.9 and installed on a new server.</p>
+  <!------------------------ *EDIT NEWS HERE* END NEWS ------------------------------->
+  
+  <!------------------------ *EDIT NEWS HERE* START NEWS ------------------------------->
+    <p class="date">August 25, 2009</p>
+         <p class="info">Ten teachers use WeBWorK assignments in fifteen classes during the Fall 2009 semester - mostly in Calculus I.</p>
+  <!------------------------ *EDIT NEWS HERE* END NEWS ------------------------------->
+  
+  <!------------------------ *EDIT NEWS HERE* START NEWS ------------------------------->
+    <p class="date">April 2009</p>
+         <p class="info">Ninety-three students are surveyed about their experiences with WeBWorK. The responses are generally positive.</p>
+  <!------------------------ *EDIT NEWS HERE* END NEWS ------------------------------->
+  
+  <!------------------------ *EDIT NEWS HERE* START NEWS ------------------------------->
+    <p class="date">February 16, 2009</p>
+         <p class="info">Start-up for the WeBWorK Project at Champlain begins with two sections each of Cal-1 & Cal-2.</p>
+  <!------------------------ *EDIT NEWS HERE* END NEWS ------------------------------->
+  
+  <!------------------------ *EDIT NEWS HERE* START NEWS ------------------------------->
+    <p class="date">February 1, 2009</p>
+         <p class="info">Use the link below for support documentation for using WeBWorK.<br />
+         <a href="http://webwork.maa.org/wiki/Student_Information#.Uz-G7_k8AwA" target="_blank"><img src="images/ww-logo-small.png" alt="WeBWorK" /></a></p>
+  <!------------------------ *EDIT NEWS HERE* END NEWS ------------------------------->
+  
+  <!-- end #news -->
+  
+</div>
+
+  <!-- end #mainContent --></div>
+  </div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+    
+    
+    
+
+<!-- end #container --></div>
+
+<!-- start #footer -->
+ <div id="footer">
+    <p>&copy; 2009-2018 Champlain College Saint-Lambert. All Rights Reserved.</p>
+  <!-- end #footer -->
+  </div>
+</body>
+</html>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d4 1
+a4 1
+<!-- <base href="http://webwork.champlainww.ca/test/"> -->
+d47 5
+d99 1
+a99 1
+    <p>&copy; 2009-2014 Champlain College Saint-Lambert. All Rights Reserved.</p>
+@
